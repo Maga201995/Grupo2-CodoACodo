@@ -75,23 +75,29 @@
                 <p>*presentar documentación</p>
               </div>
             </div>
-            <h2 class="titulo-gral">VENTA<span>VALOR DE TICKET $200</span></h2>
+            <!-- <h2 class="titulo-gral">VENTA<span>VALOR DE TICKET $200</span></h2> -->
+            <div class="row">
+              <div class="col"></div>
+              <div class="col formulario">VENTA
+                <h2>VALOR DE TICKET $200 </h2>
+              </div>
+              <div class="col"></div>
             <div class="formContainerCompra">
               <form class="formCompra">
                 <div class="formContainerCompraFilas">
-                  <input class="formInputsCompra" type="text" id="nombre" name="nombre" placeholder="Nombre" required />
-                  <input class="formInputsCompra" type="text" id="apellido" name="apellido" placeholder="Apellido" required />
+                  <input class="formInputsCompra" type="text"size="44" id="nombre" name="nombre" placeholder="Nombre" required />
+                  <input class="formInputsCompra" type="text" size="44" id="apellido" name="apellido" placeholder="Apellido" required />
                 </div>
                 <div class="formContainerCompraFilas">
-                  <input class="formInputsCompra" type="text" id="correo" name="correo" placeholder="Correo" required />
+                  <input class="formInputsCompra" type="text" size=98 id="correo" name="correo" placeholder="Correo" required />
                 </div>
                 <div class="formContainerCompraFilas">
                   <label class="formContainerCompraLabels" for="cantidad">Cantidad:</label>
                   <label class="formContainerCompraLabels" for="categoria">Categoría:</label>
                 </div>
-                <div class="formContainerCompraFilas">
-                  <input class="formInputsCompra" type="number" id="cantidad" name="cantidad" placeholder="0" required />
-                  <select class="formContainerCompraSelect" id="categoria" name="categoria">
+                <div class="formContainerCompraFilas box">
+                  <input class="formInputsCompra cantidad" type="number" id="cantidad" name="cantidad" placeholder="0" required />
+                  <select class="formContainerCompraSelect" class="categoria" id="categoria" name="categoria">
                     <option value="Estudiante" id="Estudiante">Estudiante</option>
                     <option value="Trainee" id="Trainee">Trainee</option>
                     <option value="Junior" id="Junior">Junior</option>
@@ -99,11 +105,11 @@
                   </select>
                 </div>
                 <div class="formContainerCompraFilas">
-                  <div id="resultado">Total a pagar $:</div>
+                  <div class="total" id="resultado">Total a pagar $:</div>
                 </div>
                 <div class="formContainerCompraFilas">
-                  <button class="formContainerCompraButton" type="button" onclick="borrar()">Borrar</button>
-                  <button class="formContainerCompraButton" type="button" onclick="calcularTotal()">Resumen</button>
+                  <button class="formContainerCompraButton" class="btn btn-primary" type="button" onclick="borrar()">Borrar</button>
+                  <button class="formContainerCompraButton" class="btn btn-primary" type="button" onclick="calcularTotal()">Resumen</button>
                 </div>
               </form>
             </div>
