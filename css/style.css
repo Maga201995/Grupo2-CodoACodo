@@ -305,12 +305,16 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  padding-right: 0px;
+  padding-left: 0px;
 }
 .formContainerCompra {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 100%;
+  padding-right: 0px;
+  padding-left: 0px;
 }
 .formContainerCompraFilas {
   display: flex;
@@ -324,10 +328,10 @@
 }
 
 .box {
-  width: 49rem;
+  width: 48rem;
 }
 .cantidad {
-  width: 48rem;
+  width: 49rem;
   height: 2rem;
   margin-top: 7px
 
@@ -395,3 +399,10 @@
  @media (min-width: 992px) {
     #main-footer .nav-link span { display: block; }
   }
+  div.row{
+    margin-right: 0px;
+ }
+ 
+ div.container-fluid{
+    padding-right: 0px;
+ }
